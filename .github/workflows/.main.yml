@@ -21,7 +21,7 @@ jobs:
       env:
             GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
     # run: mvn clean verify --file ./simple-api/pom.xml
-      run: mvn -B verify -e sonar:sonar \
+      run: mvn -B verify sonar:sonar \
           -Dsonar.projectKey=hansfrancois_tp2 \
           -Dsonar.organization=hansfrancois \
           -Dsonar.host.url=https://sonarcloud.io \
